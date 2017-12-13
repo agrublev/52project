@@ -55,6 +55,7 @@ module.exports = class extends Generator {
         );
 
         this.fs.copy( this.templatePath('js/main.js'),this.destinationPath('app/js/main.js') );
+        this.fs.copy( this.templatePath('js/helpful.js'),this.destinationPath('app/js/helpful.js') );
 
         this.fs.copy( this.templatePath('images/github.svg'),this.destinationPath('app/images/github.svg') );
         this.fs.copy( this.templatePath('images/github.png'),this.destinationPath('app/images/github.png') );
