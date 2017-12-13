@@ -1,6 +1,6 @@
 {
   "name": "generator-52project",
-  "version": "0.1.11-pre",
+  "version": "0.1.11",
   "description": "Yeoman generator for 52project",
   "license": "MIT",
   "repository": "agrublev/generator-52project",
