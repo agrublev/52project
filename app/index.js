@@ -2,8 +2,6 @@
 
 var yeoman = require('yeoman-generator');
 var yosay = require('yosay');
-var fs = require('fs');
-var util = require('util');
 
 var config = {};
 //var Cryptr = require('cryptr');
