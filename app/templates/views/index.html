@@ -12,11 +12,12 @@
     <body ng-controller="MyController">
         <p>Hello world! This is a 52project.</p>
         <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="../bower_components/angular/angular.min.js"></script>
         <script src="../bower_components/firebase/firebase.js"></script>
         <script src="../bower_components/firebase/firebase-firestore.js"></script>
         <script>
         	// Initialize Firebase
-        	var config = {
+        	const config = {
             apiKey: "<%= apiKey %>",
         		authDomain: "<%= authDomain %>",
         		databaseURL: "<%= databaseURL %>",
@@ -26,7 +27,7 @@
         	};
         	firebase.initializeApp(config);
         	// Initialize Cloud Firestore through Firebase
-        	var db = firebase.firestore();
+        	const db = firebase.firestore();
         </script>
         <script src="js/main.js"></script>
     </body>
