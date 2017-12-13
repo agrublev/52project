@@ -31,7 +31,6 @@
     "chalk": "^2.3.0",
     "cryptr": "^2.0.0",
     "inquirer": "^4.0.1",
-    "mem-fs-editor": "^3.0.2",
     "mkdirp": "^0.5.1",
     "npm-bump": "0.0.23",
     "yeoman-generator": "^2.0.1",

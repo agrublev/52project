@@ -12,7 +12,7 @@
 ## Step one 
 
 ```bash
-npm install -g yo
+npm i -g yeoman-generator yo yosay chalk cryptr inquirer mkdirp
 ```
 
 ## Step Two
