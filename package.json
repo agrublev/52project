@@ -3,7 +3,6 @@
   "version": "0.1.6-pre",
   "description": "Yeoman generator for 52project",
   "license": "MIT",
-  "main": "app/index.js",
   "repository": "agrublev/generator-52project",
   "author": {
     "name": "Angel Grablev",
@@ -34,6 +33,7 @@
     "mem-fs-editor": "^3.0.2",
     "npm-bump": "0.0.23",
     "yeoman-generator": "^2.0.1",
+    "yo": "^2.0.0",
     "yosay": "^2.0.1"
   },
   "devDependencies": {
