@@ -38,7 +38,7 @@ var a52project = yeoman.generators.Base.extend({
                 projectId: cryptr.decrypt('a1617fbf7d99eec8f3ce0c1b7322a1e7a97abd550e0971'),
                 storageBucket: cryptr.decrypt('f22628ef2eccb892b6d65447'),
                 messagingSenderId: cryptr.decrypt('552576775563')
-            }
+            };
 
             done();
         }.bind(this));
