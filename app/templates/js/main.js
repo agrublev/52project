@@ -1,6 +1,5 @@
 $(function(){
-    console.log("HELLOW WORLD");
-
+    console.log("%c 52PROJECT ready to go!","background-color:#444; text-shadow:0 1px 0 #000; color:#fff; line-height:30px; padding:15px 300px; font-size:25px; font-family: -apple-system, BlinkMacSystemFont, sans-serif;letter-spacing: 2px;");
     db.collection("items")
         .onSnapshot(function (snapshot) {
             snapshot.docChanges.forEach(function (change) {
@@ -16,6 +15,26 @@ $(function(){
                 }
             });
         });
+
+    // Declare app level module which depends on views, and components
+    var app = angular.module('myApp', ['ui.tree']);
+    app.filter('prettyJSON', function () {
+        function prettyPrintJson(json) {
+            return JSON ? JSON.stringify(json, null, '  ') : 'your browser doesnt support JSON so cant pretty print';
+        }
+
+        return prettyPrintJson;
+    });
+    /**
+     <div style="overflow:auto; height: 220px; color:#fff;">
+     <pre>
+     {{tracks | json}}
+     </pre>
+     </div>
+     */
+    app.controller('AnimateController', function ($scope, $rootScope) {
+
+    });
 
     //db.collection("subscriptions").where("userid", "==", fc.CURRENT_USER).where("unread", "==", 1)
 
