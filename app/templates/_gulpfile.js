@@ -33,7 +33,7 @@ gulp.task('views', function(){
   return gulp.src([
       './index.html',
       './app/**/*.html'
-    ])    
+    ])
     .pipe(gulp.dest('build'))
     .pipe(browserSync.reload({stream: true}));
 });
@@ -62,7 +62,7 @@ gulp.task('browser-sync', function() {
 gulp.task('watch', ['build'], function() {
   gulp.watch('app/**/*.less', ['styles']);
   gulp.watch('app/images/**/*', ['images']);
-  gulp.watch(['./app/**/*.html'], ['views']);
+  gulp.watch(['app/**/*.html'], ['views']);
 
   gulp.start('browser-sync');
 });
