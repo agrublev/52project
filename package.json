@@ -1,6 +1,6 @@
 {
   "name": "generator-52project",
-  "version": "0.1.5",
+  "version": "0.1.6-pre",
   "description": "Yeoman generator for 52project",
   "license": "MIT",
   "main": "app/index.js",
