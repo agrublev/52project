@@ -48,16 +48,13 @@ module.exports = class extends Generator {
         mkdirp('app/css');
         mkdirp('app/images');
 
-        this.fs.copy(
-            this.templatePath('js/main.js'),
-            this.destinationPath('app/js/main.js')
-        );
-
         this.fs.copyTpl(
             this.templatePath('views/index.html'),
             this.destinationPath('app/index.html'),
             this.props.config
         );
+
+        this.fs.copy( this.templatePath('js/main.js'),this.destinationPath('app/js/main.js') );
 
         this.fs.copy( this.templatePath('images/github.svg'),this.destinationPath('app/images/github.svg') );
         this.fs.copy( this.templatePath('images/github.png'),this.destinationPath('app/images/github.png') );

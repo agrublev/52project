@@ -12,7 +12,7 @@
 ## Step one 
 
 ```bash
-npm i -g yeoman-generator yo yosay chalk cryptr inquirer mkdirp
+npm i -g yo
 ```
 
 ## Step Two
@@ -27,6 +27,11 @@ Finally, initiate the generator:
 
 ```bash
 yo 52project
+```
+
+#if issues 
+```bash
+npm i -g yeoman-generator yosay chalk cryptr inquirer mkdirp
 ```
 
 ## License
